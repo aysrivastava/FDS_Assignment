@@ -1,0 +1,23 @@
+{
+  "title": "Substation Load Dashboard",
+  "panels": [
+    {
+      "title": "Substation Loads",
+      "type": "graph",
+      "targets": [
+        {
+          "expr": "substation_load{instance=~'substation1:8000'}",
+          "legendFormat": "Substation 1"
+        },
+        {
+          "expr": "substation_load{instance=~'substation2:8000'}",
+          "legendFormat": "Substation 2"
+        },
+        {
+          "expr": "substation_load{instance=~'substation3:8000'}",
+          "legendFormat": "Substation 3"
+        }
+      ]
+    }
+  ]
+}
